@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto write</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="setGrid">
+        <div class="slider">
+          <label for="width-range">Grid Width</label>
+          <input type="range" id="width-range" min="1" max="35" />
+          <span id="width-value">00</span>
+        </div>
+        <div class="slider">
+          <label for="height-range">Grid Height</label>
+          <input type="range" id="height-range" min="1" max="35" />
+          <span id="height-value">00</span>
+        </div>
+      </div>
+      <div class="gridBtns">
+        <button id="createGrid">Create Grid</button>
+        <button id="clearGrid">Clear Grid</button>
+        <input type="color" id="color-input" />
+        <button id="eraseGrid">Erase</button>
+        <button id="paintGrid">Paint</button>
+      </div>
+      <div class="container"></div>
+    </div>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
