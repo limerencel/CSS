@@ -127,3 +127,11 @@ h4,
   position: relative;
   top: 8px;
 }
+
+@media (max-width: 480px) {
+  .card {
+    width: 100vw;
+    min-height: 100vh;
+    border-radius: 0;
+  }
+}
