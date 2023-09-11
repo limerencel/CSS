@@ -42,6 +42,11 @@ function generatePassword(Pwdlength) {
     validCharacters += " ";
   }
 
+  if (validCharacters === "") {
+    alert("Please select the options properly");
+    return "";
+  }
+
   if (excludeDuplicates) {
     if (Pwdlength > validCharacters.length) {
       window.alert("There aren't enough unique characters");
