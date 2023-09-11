@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #44a047;
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  background-color: #fff;
+  width: 55vmin;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0 25px 50px rgba(7, 35, 20, 0.2);
+}
+
+.card h2 {
+  padding: 0 20px;
+  margin: 10px 0;
+}
+
+.rest {
+  padding: 20px;
+}
+
+.password {
+  border: none;
+}
+
+.firstInput {
+  border: 2px solid #c1c5c8;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.firstInput button {
+  margin-right: 1rem;
+  cursor: pointer;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  transform: scale(1.4);
+}
+.firstInput input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+}
+.firstInput:focus-within {
+  outline: none;
+  border: 2px solid #00b406;
+}
+
+.secondInput {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-length {
+  display: flex;
+  justify-content: space-between;
+}
+
+h4,
+#pwdLength {
+  margin: 0;
+  margin: 20px 0 5px;
+}
+
+.checkboxes {
+  color: #737475;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.settings {
+  margin-bottom: 1rem;
+}
+
+.generate {
+  width: 100%;
+  padding: 14px 5px;
+  margin: 1.5rem 0 1rem;
+  cursor: pointer;
+  background-color: #44a047;
+  border: none;
+  border-radius: 5px;
+  color: #ffffffcf;
+  text-transform: uppercase;
+}

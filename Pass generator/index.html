@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h2>Pass Generator</h2>
+        <hr />
+        <div class="rest">
+          <div class="firstInput" tabindex="0">
+            <input type="text" class="password" id="generatePwd" />
+            <button id="copy">
+              <i class="fa-regular fa-copy"></i>
+            </button>
+          </div>
+          <span class="complexity"></span>
+          <div class="secondInput">
+            <div class="wrapper-length">
+              <h4>Password length</h4>
+              <span id="pwdLength">15</span>
+            </div>
+            <input type="range" min="1" max="30" id="length" />
+          </div>
+          <div class="thirdInput">
+            <h4 class="settings">Pass Settings</h4>
+            <div class="checkboxes">
+              <div class="checkboxWrapper">
+                <input type="checkbox" id="lowercase" class="box" />
+                <label for="lowercase">lowercase(a-z)</label>
+              </div>
+              <div class="checkboxWrapper">
+                <input type="checkbox" id="uppercase" class="box" />
+                <label for="uppercase">Uppercase(A-Z)</label>
+              </div>
+              <div class="checkboxWrapper">
+                <input type="checkbox" id="numbers" class="box" />
+                <label for="numbers">Numbers(0-9)</label>
+              </div>
+              <div class="checkboxWrapper">
+                <input type="checkbox" id="sysmbols" class="box" />
+                <label for="sysmbols">Symbols(!-$^+)</label>
+              </div>
+              <div class="checkboxWrapper">
+                <input type="checkbox" id="duplicate" class="box" />
+                <label for="duplicate">Exclude Duplicate</label>
+              </div>
+              <div class="checkboxWrapper">
+                <input type="checkbox" id="spaces" class="box" />
+                <label for="spaces">Include Spaces</label>
+              </div>
+            </div>
+          </div>
+          <button class="generate" id="generateBtn">generate password</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
