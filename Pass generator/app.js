@@ -75,3 +75,18 @@ generateButton.addEventListener("click", () => {
   let password = generatePassword(length.value);
   passwordArea.value = password;
 });
+
+copyButton.addEventListener("click", () => {
+  passwordArea.select();
+  try {
+    if (passwordArea.value) {
+      document.execCommand("copy");
+      alert("Password copied");
+    } else if (passwordArea.value === "") {
+      alert("there is no password to be copied");
+    }
+  } catch (e) {
+    alert("It seems something went wrong. " + e);
+  }
+  passwordArea.setSelectionRange(0, 0);
+});
