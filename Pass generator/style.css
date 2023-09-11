@@ -95,3 +95,35 @@ h4,
   color: #ffffffcf;
   text-transform: uppercase;
 }
+
+.pwdlength {
+  margin-top: 15px;
+}
+
+.complexity#weak {
+  width: 20%;
+  padding: 3px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #e64a4a;
+  position: relative;
+  top: 8px;
+}
+.complexity#medium {
+  width: 50%;
+  padding: 3px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #f1c80b;
+  position: relative;
+  top: 8px;
+}
+.complexity#strong {
+  width: 100%;
+  padding: 3px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #43a047;
+  position: relative;
+  top: 8px;
+}

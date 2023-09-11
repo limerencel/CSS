@@ -9,6 +9,7 @@ let duplicateButton = document.getElementById("duplicate");
 let spacesButton = document.getElementById("spaces");
 let generateButton = document.getElementById("generateBtn");
 let lengthValue = document.getElementById("pwdLength");
+let complexity = document.querySelector(".complexity");
 
 const characters = {
   lowercase: "abcdefghijklmnopqrstuvwxyz",
@@ -78,6 +79,9 @@ length.addEventListener("input", () => {
 
 generateButton.addEventListener("click", () => {
   let password = generatePassword(length.value);
+  const complexityId =
+    password.length <= 8 ? "weak" : password.length <= 16 ? "medium" : "strong";
+  complexity.setAttribute("id", complexityId);
   passwordArea.value = password;
 });
 
