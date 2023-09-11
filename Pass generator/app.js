@@ -42,7 +42,7 @@ function generatePassword(Pwdlength) {
     validCharacters += " ";
   }
 
-  if (validCharacters === "") {
+  if (validCharacters === "" || validCharacters === " ") {
     alert("Please select the options properly");
     return "";
   }
