@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,700;6..12,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(#1c1917 50%, #ffb92a 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.container {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e293b;
+  color: #fff;
+  padding: 1.5rem 1rem;
+  border-radius: 15px;
+  box-shadow: 1.2rem 2rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+img {
+  width: 200px;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.overview {
+  display: flex;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: transparent;
+  border: 1px solid #a6a2a2;
+  flex-grow: 1;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+form button {
+  appearance: none;
+  outline: none;
+  border: none;
+  background-color: #ffb92a;
+  border-radius: 3px;
+  margin-left: 1.5rem;
+  width: 20%;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 1rem 1rem;
+  width: 60%;
+  position: relative;
+  right: 14px;
+}
+
+.content h2 {
+  font-weight: 800;
+  text-align: center;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  gap: 5px;
+  margin-top: 1rem;
+}
+
+.rating span {
+  padding-top: 2.5px;
+  font-weight: 700;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+  color: #7e878a;
+  margin-top: 1rem;
+}
+
+.sort {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+}
+
+.sort * {
+  border: 1px solid #656869;
+  padding: 3px 10px;
+  font-weight: 200;
+  font-size: small;
+  border-radius: 5px;
+  color: #d3d3d3;
+}
+
+.plot span,
+.cast span {
+  color: #a6a6a6;
+  word-spacing: 2px;
+}
