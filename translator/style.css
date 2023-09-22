@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,700;6..12,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #06283d;
+  font-family: "Nunito Sans", sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  width: 790px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  top: 100px;
+  transform: translateX(-50%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.01);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+textarea {
+  outline: none;
+  resize: none;
+  border: none;
+  height: 250px;
+  width: 100%;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+.original {
+  width: 50%;
+  border-right: 1px solid #ccc;
+}
+
+.result {
+  width: 50%;
+}
+
+.original textarea::placeholder {
+  color: #616161;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.result textarea::placeholder {
+  font-size: medium;
+}
+
+.wrapper {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.option {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #ccc;
+  padding: 10px 0;
+  align-items: center;
+}
+
+.divider-option {
+  height: 25px;
+  width: 1px;
+  background-color: #ccc;
+}
+
+#language {
+  width: 150px;
+  border: none;
+  padding: 8px 0;
+  outline: none;
+  cursor: pointer;
+  font-size: medium;
+}
+
+#language:hover {
+  background-color: #eeeeee;
+  border-radius: 10px;
+}
+
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+button:hover {
+  background-color: #eeeeee;
+  border-radius: 5px;
+}
+
+.translate {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.translateBtn {
+  margin: auto;
+  background-color: #05354d;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: large;
+}
+
+.translateBtn:hover {
+  background-color: #06283d;
+}
+
+@media (max-width: 920px) {
+  .text {
+    display: flex;
+    flex-direction: column !important;
+  }
+  body {
+    display: flex;
+    align-items: center;
+  }
+  .container {
+    width: 100vw;
+    position: static;
+    transform: translateX(0);
+  }
+  .original {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+  .result {
+    width: 100%;
+  }
+  #language {
+    width: auto;
+  }
+}
